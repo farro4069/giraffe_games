@@ -1,0 +1,144 @@
+:root {
+	--hue: 200;
+	--saturation: 50%;
+	--lightness: 75%;
+	--foreground-color: hsl(var(--hue), var(--saturation), var(--lightness));
+}
+
+html {
+	box-sizing: border-box;
+	background: #ddc666;
+}
+
+body {
+	margin: 0 auto;
+	min-height: 100vh;
+	background-size: cover;
+	background-position: center;
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 20px;
+	font-weight: 200;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} 
+
+a,
+a:active,
+a:link,
+a:visited {
+	color: #aaa;
+	text-decoration: none;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+footer {
+	margin-top: 10vh;
+}
+
+header {
+	width: 100vw;
+	min-height: 20vh;
+	text-align: center;
+	color: #fff;
+	text-shadow: 2px 2px #000;
+}
+
+#nav__main {
+	position: relative;
+	width: 100%;
+	background: #222;
+	z-index: 1;
+}
+
+.game {
+	position: relative;
+	width: 75vw;
+	height: 50vh;
+	background-color: #bba644;
+	margin:  20px auto;
+	overflow: hidden;
+}
+
+h1 {
+	text-align: center;
+	font-size: 5rem;
+	line-height: 1;
+	margin: 20px;
+}
+
+.score {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 20px;
+	padding: 0 3rem;
+	background-color: rgba(255, 255, 255, 0.2);
+	font-size: 5rem;
+	line-height: 1;
+	line-height: 1;
+	border-radius: 1rem;
+}
+
+.score:first-child {
+	border-right: solid 1% var(--foreground-color);
+}
+
+.btn {
+	background-color: rgba(255, 255, 255, 0.2);
+	margin-top: 20px;
+	padding: 0.5em 3rem;
+	line-height: 1;
+	border: none;
+	border-radius: 1rem;
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 20px;
+	font-weight: 200;
+}
+
+.btn:hover {
+	cursor: pointer;
+	opacity: .5;
+
+}
+
+.paddle {
+	--position: 50;
+	position: absolute;
+	background-color: var(--foreground-color);
+	top: calc(var(--position) * 1%);
+	transform: translateY(-50%);
+	width: 2vw;
+	height: 15%;
+}
+
+.paddle.left {
+	left:  1vw;
+}
+
+.paddle.right {
+	right: 1vw;
+}
+
+.ball {
+	--x: 50;
+	--y: 50;
+	--ball: 200;
+	position: absolute;
+	left: calc(var(--x)* 1%);
+	top: calc(var(--y) * 1%);
+	transform: translateY(-50%);
+	background-color: hsl(var(--ball), 50%, 50%);
+	width: 3vh;
+	height: 3vh;
+	border-radius: 50%;
+}
+
+

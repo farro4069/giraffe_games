@@ -1,0 +1,43 @@
+.game-board {
+	margin: 100px auto;
+	width: 95vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.key {
+	width: 90px;
+	margin: auto;
+	padding: 20px 0;
+	text-align: center;
+	color: var(--game-color);
+	background-color: var(--background-color);
+	border: solid 5px var(--game-color);
+	border-radius: 10px;
+	transition: all 70ms;
+}
+
+.playing {
+	border-color: var(--clr-yellow);
+	transform: scale(1.1);
+}
+
+kbd {
+	display: block;
+	font-size: 40px;
+}
+
+.sound {
+	display: block;
+	margin-top: 10px;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: var(--clr-light);
+}
+
+footer {
+	position: absolute;
+	bottom: 40px;
+}

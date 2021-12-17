@@ -1,0 +1,152 @@
+:root {
+	--hue: 100;
+	--saturation: 50%;
+	--lightness: 75%;
+	--foreground-color: hsl(var(--hue), var(--saturation), var(--lightness));
+	--background-color: #ddc666;
+	--game-color: #bba644;
+}
+
+html {
+	box-sizing: border-box;
+	background: #ddc666;
+}
+
+body {
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 20px;
+	font-weight: 200;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} 
+
+a,
+a:active,
+a:link,
+a:visited {
+	color: #aaa;
+	text-decoration: none;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+
+.nav__logo input {
+	display: none;
+}
+
+.nav__logo input + label {
+	position: relative;
+	top: 1em;
+	left: 0.5em;
+	display: block;
+	content: '';
+	height: 5rem;
+	width: 5rem;
+	background-color: var(--game-color);
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 1;
+	border: solid 3px var(--background-color);
+}
+
+.nav__logo label::before {
+	display: inline-block;
+	content: '';
+	height: 120%;
+	width: 120%;
+	margin-top: -20%;
+	background-image: url('poor_giraffe.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+
+
+.nav__main {
+	display: flex;
+}
+
+.nav__items {
+	margin-left: -100vw;
+	display: flex;
+	position: fixed;
+	top: 0.5em;
+	left: 0px;
+	list-style: none;
+	padding: 0.8em 0;
+	justify-content: left;
+	align-items: center;
+	flex-direction: row;
+	background-color: var(--game-color);
+	box-shadow: 0 0 1em var(--background-color);
+	border-radius: 0 2em 2em 0;
+	transition: all 1500ms ease 20ms;
+}
+
+.active {
+	margin: 0.6em 4em 0 0;
+}
+
+.nav__items.active:first-child {
+	padding-left: 120px;
+}
+
+.nav__item a {
+	margin-right: 1em;
+	padding: 0.2em 1em;
+	font-size: 1.5rem;
+	color: var(--game-color);
+	font-weight: 300;
+	background-color: var(--background-color);
+	border-radius: 0.5em;
+}
+
+.nav__item a:hover {
+	color: var(--foreground-color);
+}
+
+footer {
+	margin-top: 2vh;
+}
+
+header {
+	width: 100vw;
+	min-height: 4vh;
+	text-align: center;
+	color: #fff;
+	text-shadow: 2px 2px #000;
+}
+
+#blank-space {
+	width: 75vmin;
+	height: 75vmin;
+	background-color: #bba644;
+}
+
+
+h1 {
+	text-align: center;
+	font-size: 5rem;
+	line-height: 1;
+	margin: 20px;
+}
+

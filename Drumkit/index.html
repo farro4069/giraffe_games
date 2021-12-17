@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drumkit</title>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+	<link rel="stylesheet" type="text/css" href="../menu.css">
+	<link rel="stylesheet" type="text/css" href="drumkit.css">
+</head>
+
+<body class="plain">
+
+<body>
+	<div class="nav__logo">
+		<input type="checkbox" name="" id="logo">
+		<label for="logo"></label>
+	</div>
+
+	<nav class="nav__main">
+		<ul class="nav__items">
+			<li class="nav__item"><a href="../Canvas/index.html">Draw</a></li>
+			<li class="nav__item"><a href="../Drumkit/index.html">Drum</a></li>
+			<li class="nav__item"><a href="../pong/index.html">Pong</a></li>
+			<li class="nav__item"><a href="../snake/index.html">Snake</a></li>
+			<li class="nav__item"><a href="../Whack/index.html">Whack</a></li>
+		</ul>
+	</nav>
+
+<main class="container">
+
+
+<header>
+	<h1>Drum kit</h1>
+</header>
+
+<div class="game-board">
+	<div data-key="65" class="key"><kbd>A</kbd><span class="sound">clap</span></div>
+	<div data-key="83" class="key"><kbd>S</kbd><span class="sound">hi hat</span></div>
+	<div data-key="68" class="key"><kbd>D</kbd><span class="sound">kick</span></div>
+	<div data-key="70" class="key"><kbd>F</kbd><span class="sound">open hat</span></div>
+	<div data-key="71" class="key"><kbd>G</kbd><span class="sound">boom</span></div>
+	<div data-key="72" class="key"><kbd>H</kbd><span class="sound">ride</span></div>
+	<div data-key="74" class="key"><kbd>J</kbd><span class="sound">snare</span></div>
+	<div data-key="75" class="key"><kbd>K</kbd><span class="sound">tom</span></div>
+	<div data-key="76" class="key"><kbd>L</kbd><span class="sound">tink</span></div>
+
+	<audio data-key="65" src='sounds/clap.wav'></audio>
+	<audio data-key="83" src='sounds/hihat.wav'></audio>
+	<audio data-key="68" src='sounds/kick.wav'></audio>
+	<audio data-key="70" src='sounds/openhat.wav'></audio>
+	<audio data-key="71" src='sounds/boom.wav'></audio>
+	<audio data-key="72" src='sounds/ride.wav'></audio>
+	<audio data-key="74" src='sounds/snare.wav'></audio>
+	<audio data-key="75" src='sounds/tom.wav'></audio>
+	<audio data-key="76" src='sounds/tink.wav'></audio>
+</div>
+
+	<footer>
+		<p>Courtesy of Wes Bos, 2021.</p>
+	</footer>
+</main>
+
+<script type="text/javascript" src="drumkit.js"></script>
+<script type="text/javascript" src="../menu.js"></script>
+
+</body>
+</html>
+
