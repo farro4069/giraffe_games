@@ -1,4 +1,2 @@
-Giraffe Games
-
-Some simple javascript games for fun.
-
+giraffe_games
+Some simple javascript games games
