@@ -6,18 +6,17 @@ html {
 	font-weight: 200;
 }
 
-body {
+.container {
 	margin: 0;
 }
 
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
-} 
+footer {
+	margin-top: calc(10vh - 7rem);
+}
 
 #panel {
-	min-height: 100vh;
+	width: 100vw;
+	height: 90vh;
 	overflow: hidden;
 	display: flex;
 }

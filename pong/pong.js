@@ -167,3 +167,6 @@ window.addEventListener('mousemove', e => {
 	paddlePlayer.position = (((e.y - game.offsetTop)/ game.offsetHeight) * 100);
 });
 
+window.addEventListener('touchmove', e => {
+	paddlePlayer.position = (((e.y - game.offsetTop)/ game.offsetHeight) * 100);
+});

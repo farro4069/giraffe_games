@@ -128,6 +128,10 @@ footer {
 	margin-top: 2vh;
 }
 
+footer p {
+	font-size: 1rem;
+}
+
 header {
 	width: 100vw;
 	min-height: 4vh;

@@ -41,7 +41,11 @@ a:hover {
 }
 
 footer {
-	margin-top: 10vh;
+	margin-top: calc(30vh - 12rem);
+}
+
+footer p {
+	font-size: 1rem;
 }
 
 header {
@@ -78,10 +82,10 @@ h1 {
 .score {
 	display: flex;
 	justify-content: space-evenly;
-	margin: 20px;
+	margin: 1rem;
 	padding: 0 3rem;
 	background-color: rgba(255, 255, 255, 0.2);
-	font-size: 5rem;
+	font-size: 4rem;
 	line-height: 1;
 	line-height: 1;
 	border-radius: 1rem;
