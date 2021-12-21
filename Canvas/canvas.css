@@ -11,12 +11,12 @@ html {
 }
 
 footer {
-	margin-top: calc(10vh - 7rem);
+	margin-top: calc(0vh - 2rem);
 }
 
 #panel {
 	width: 100vw;
-	height: 90vh;
+	height: calc(100vh - 5rem);
 	overflow: hidden;
 	display: flex;
 }

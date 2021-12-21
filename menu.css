@@ -125,7 +125,7 @@ a:hover {
 }
 
 footer {
-	margin-top: 2vh;
+	margin-top: calc(0vh - 2rem);
 }
 
 footer p {
