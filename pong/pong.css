@@ -8,6 +8,7 @@
 html {
 	box-sizing: border-box;
 	background: #ddc666;
+	overscroll-behavior: contain;
 }
 
 body {
