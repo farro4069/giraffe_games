@@ -1,11 +1,12 @@
 // **********************************  Declare variables
 
 const initialVelocity = 0.1;
-const increaseVelocity = 0.0001;
+const increaseVelocity = 0.001;
 const game = document.querySelector('.game');
 const paddleSpeed = 0.005;
 const scorePlayerElem = document.querySelector('.score__player');
 const scoreComputerElem = document.querySelector('.score__computer');
+const audio = document.querySelector('audio');
 var scorePlayer = 0;
 var scoreComputer = 0;
 
@@ -58,7 +59,9 @@ class Ball {
 		};
 		if (paddleRects.some(r => isCollision(r, rect))) {
 			this.direction.x *= -1;
-			this.ballElem.style.setProperty('--ball', this.y * 5 );
+			audio.currentTime = 0.05;
+			audio.play();
+			// this.ballElem.style.setProperty('--ball', this.y * 5 );
 		}
 	}
 };
@@ -68,7 +71,7 @@ function isCollision(rect1, rect2) {
 		rect1.right >= rect2.left && 
 		rect1.top <= rect2.bottom && 
 		rect1.bottom >= rect2.top
-		)		
+		)
 };
 
 // ******************************** Paddle class functions
