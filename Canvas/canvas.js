@@ -18,7 +18,6 @@ let direction = true;
 function draw(e) {
 	if(!isDrawing) return;
 	e.preventDefault(); 
-	console.log(e);
 	ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
 	ctx.beginPath();
 	ctx.moveTo(lastX, lastY);

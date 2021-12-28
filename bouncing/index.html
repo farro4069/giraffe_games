@@ -2,10 +2,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Snake</title>
+	<title>Balls</title>
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Amatic+SC">
 	<link rel="stylesheet" type="text/css" href="../menu.css">
-	<link rel="stylesheet" type="text/css" href="snake.css">
+	<link rel="stylesheet" type="text/css" href="bouncing.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
 	<nav class="nav__main">
 		<ul class="nav__items">
 			<li class="nav__item"><a href="../Canvas/index.html">Draw</a></li>
-			<li class="nav__item"><a href="../bouncing/index.html">Balls</a></li>
+			<li class="nav__item"><a href="./bouncing/index.html">Balls</a></li>
 			<li class="nav__item"><a href="../Drumkit/index.html">Drum</a></li>
 			<li class="nav__item"><a href="../pong/index.html">Pong</a></li>
 			<li class="nav__item"><a href="../snake/index.html">Snake</a></li>
@@ -27,22 +27,23 @@
 
 <div class="container">
 <header>
-	<h1>Snake!</h1>
+	<h1>Balls!</h1>
+	<span class="steady">steady</span>
+	<span class="more">more</span>
+
 </header>
 
-
-<section id="game-board">
-
-</section>
-
+<canvas id="game-board">
+	
+</canvas>
 
 <footer>
-	<p>Courtesy of Web Dev Simplified, 2021.</p>
+	<p>Poor Giraffe, 2021.</p>
 </footer>
 
 </div>
 
-<script type="text/javascript" src="snake.js"></script>
+<script type="text/javascript" src="bouncing.js"></script>
 <script type="text/javascript" src="../menu.js"></script>
 </body>
 </html>

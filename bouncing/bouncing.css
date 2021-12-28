@@ -1,0 +1,57 @@
+body {
+	overflow: hidden;
+}
+
+header {
+	position: relative;
+	width: 100vw;
+	min-height: 4vh;
+	text-align: center;
+	color: #fff;
+	text-shadow: 2px 2px #000;
+}
+
+#game-board {
+	width: 90vw;
+	height: calc(80vh - 6rem);
+	background-color: #bba644;
+	opacity: 0.8;
+}
+
+h1 {
+	text-align: center;
+	font-size: 5rem;
+	line-height: 1;
+	margin: 20px;
+}
+
+.steady, 
+.more {
+	position: absolute;
+	top: 3rem;
+	left: 70vw;
+	width: 10vw;
+	color: #eee;
+	background-color: var(--game-color);
+	font-size: 1.5rem;
+	padding: 0.5em;
+	border-radius: 0.5em;
+	cursor: pointer;
+}
+
+.more {
+	left: 85vw;
+}
+
+.ball {
+	position: absolute;
+	--size: 10vmin;
+	--color: hsl(200 50% 50%);
+	background-color: var(--color);
+	border-radius: 50%;
+	width: var(--size);
+	height: var(--size);
+	box-shadow: 0 0 2px;
+	z-index: 10;
+}
+
